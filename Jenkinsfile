@@ -20,9 +20,6 @@ pipeline {
             steps {
                 sh "chmod +x ./scripts/deliver.sh"
                 sh './scripts/deliver.sh'
-                input message: 'Finished using the web site? (Click "Proceed" to continue)'
-                sh "chmod +x ./scripts/kill.sh"
-                sh './scripts/kill.sh'
             }
         }
     }
