@@ -1,7 +1,8 @@
 pipeline {
     agent {
-        node {
-            label 'docker-agent-react'
+        docker {
+            image 'quocanuit/myjenkinsagent:alpine-jdk21-nodejs'
+            args '-p 3000:3000'
         }
     }
     triggers {
