@@ -1,8 +1,7 @@
 pipeline {
     agent {
-        docker {
-            image 'registry.gitlab.com/quocanuit1/myjenkinsagent:v3'
-            args '-p 3000:3000'
+        node {
+            label 'docker-agent-react'
         }
     }
     triggers {
