@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'quocanuit/myjenkinsagent:alpine-jdk21-nodejs'
+            image 'registry.gitlab.com/quocanuit1/myjenkinsagent:alpine-jdk21-nodejs'
             args '-p 3000:3000'
         }
     }
