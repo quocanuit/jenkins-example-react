@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'registry.gitlab.com/quocanuit1/myjenkinsagent:v2'
+            image 'registry.gitlab.com/quocanuit1/myjenkinsagent:v3'
             args '-p 3000:3000'
         }
     }
